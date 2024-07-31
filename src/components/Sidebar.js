@@ -24,6 +24,14 @@ const NavIcon = styled(Link)`
   align-items: center;
 `;
 
+const NavIconMenu = styled(Link)`
+  margin-left: 92%;
+  font-size: 1.6rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+`;
+
 const SidebarNav = styled.nav`
   background: #15171c;
   width: 250px;
@@ -32,7 +40,7 @@ const SidebarNav = styled.nav`
   justify-content: center;
   position: fixed;
   top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  right: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
 `;
@@ -50,21 +58,23 @@ const Sidebar = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav>
-          <NavIcon to="#">
+          <NavIconMenu to="#">
             <FaIcons.FaBars onClick={showSidebar} />
-          </NavIcon>
+          </NavIconMenu>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
-            <NavIcon to="#">
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
-            </NavIcon>
+            {
+              <NavIcon to="#">
+                <AiIcons.AiOutlineClose onClick={showSidebar} />
+              </NavIcon>
+            }
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;
             })}
           </SidebarWrap>
         </SidebarNav>
-        </IconContext.Provider>
+      </IconContext.Provider>
     </>
   );
 };
