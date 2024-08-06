@@ -1,15 +1,15 @@
 export const SidebarData = [
   {
     title: "Home",
-    path: "./pages/",
+    path: "./",
   },
   {
     title: "Menu",
-    path: "./pages/menu",
+    path: "./menu",
   },
   {
     title: "About",
-    path: "./pages/about",
+    path: "./about",
   },
   {
     title: "Order Online",
@@ -17,6 +17,6 @@ export const SidebarData = [
   },
   {
     title: "Pizza Quiz",
-    path: "./pages/pizza-quiz",
+    path: "./pizza-quiz",
   },
 ];
