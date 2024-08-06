@@ -8,6 +8,7 @@ import SubMenu from "./SubMenu";
 import { IconContext } from "react-icons/lib";
 
 const Nav = styled.div`
+  width: 100%;
   background: #15171c;
   height: 80px;
   display: flex;

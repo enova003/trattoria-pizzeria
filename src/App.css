@@ -24,7 +24,7 @@
 }
 
 .logo {
-  width: 30%;
+  width: 48%;
   max-width: 65%;
   height: auto;
 }
@@ -35,8 +35,72 @@
   margin: 0;
 }
 
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.line {
+ margin: 0 auto;
+ margin-top: 4%;
+ margin-bottom: 4%;
+ width: 75%;
+}
+
+.home-content {
+  margin: 8%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  text-align: center;
+  width: 250px;
+  max-width: 35%;
+  height: 50px;
+  color: whitesmoke;
+  background-color: rgb(212, 12, 12);
+  border: none;
+  border-radius: 50px;
+  font-size: calc(5px + 2vmin);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.nav-links:hover {
+  background-color: red;
+}
+
+.text-and-photos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.text-and-photos p {
+  flex: 1; 
+  margin-right: 20px; 
+  margin-left: 20px;
+}
+
+.div-photos {
+  max-width: 60%; 
+  height: auto; 
+}
+
+.footer {
+  text-align: center;
+  margin: 1%;
+}
+
 @media only screen and (max-width: 600px) {
-  .top-contact {
+  .top-contact, .home-content, .footer {
     font-size: 10px;
   }
 }
