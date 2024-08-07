@@ -5,7 +5,7 @@ function Quiz() {
   return (
     <div>
       <div className="quiz-banner">
-        <img className="banner" src="./images/banner2.jpg" alt="banner" />
+        <img className="banner" src="./images/banner-4.jpg" alt="banner" />
       </div>
       <div className="quiz-content">
         <h1 className="title">Pizza Quiz</h1>
