@@ -38,7 +38,7 @@ function App() {
         <Route path="/pizza-quiz" element={<Quiz />} />
       </Routes>
       <div className="footer">
-        Trattoria Pizzeria &copy; | 251-375-0076 | 11611 US Highway 31 Spanish
+        Trattoria Pizza & Italian &copy; | 251-375-0076 | 11611 US Highway 31 Spanish
         Fort, AL 36527 | info@trattoriapizzaitalian.com
       </div>
     </Router>

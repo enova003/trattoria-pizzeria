@@ -8,7 +8,7 @@ function Home() {
         <img className="banner" src="./images/banner-home.jpg" alt="banner" />
       </div>
       <div className="home-content">
-        <h1 className="title">Trattoria Pizzeria</h1>
+        <h1 className="title">Trattoria Pizza & Italian</h1>
         <hr className="line"></hr>
         <p className="quiz">
           Not sure what to order?
@@ -21,7 +21,7 @@ function Home() {
         <hr className="line"></hr>
         <div className="catering">
           <p className="left-text">
-            At Trattoria Pizzeria, we specialize in bringing the authentic
+            At Trattoria Pizza & Italian, we specialize in bringing the authentic
             flavors of Italy directly to your event. Whether you're hosting an
             intimate gathering of 5 or a large celebration with up to 100
             guests, we have the perfect catering solution for you. From
