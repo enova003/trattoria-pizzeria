@@ -10,7 +10,7 @@ function Home() {
       <div className="home-content">
         <h1 className="title">Trattoria Pizzeria</h1>
         <hr className="line"></hr>
-        <p>
+        <p className="quiz">
           Not sure what to order?
           <br />
           Try taking our quick, 5-question pizza quiz
@@ -20,7 +20,7 @@ function Home() {
         </a>
         <hr className="line"></hr>
         <div className="catering">
-          <p className="home-text">
+          <p className="left-text">
             At Trattoria Pizzeria, we specialize in bringing the authentic
             flavors of Italy directly to your event. Whether you're hosting an
             intimate gathering of 5 or a large celebration with up to 100
@@ -34,7 +34,7 @@ function Home() {
         </div>
         <hr className="line"></hr>
         <div className="text-and-photos">
-          <p className="home-text">
+          <p className="right-text">
             We are deeply committed to delivering an exceptional experience by
             focusing on two core principles: the quality of our ingredients and
             the excellence of our service. We meticulously select the freshest,
@@ -53,7 +53,7 @@ function Home() {
             src="./images/pizza-toss.jpg"
             alt="Tossing Pies"
           ></img>
-          <p className="home-text">
+          <p className="left-text">
             Since 2014, our pizzeria has proudly been awarded the{" "}
             <em>Best Pizza in South Alabama</em>, the{" "}
             <em>Best Pizza in Baldwin County</em>, and the{" "}
@@ -61,7 +61,7 @@ function Home() {
           </p>
         </div>
         <div className="text-and-photos">
-          <p className="home-text">
+          <p className="right-text">
             Our menu features a delectable range of traditional Italian dishes,
             including wood-fired pizzas, homemade pasta, fresh salads, and
             indulgent desserts. We can customize our offerings to suit your
@@ -70,8 +70,8 @@ function Home() {
           </p>
           <img
             className="div-photos"
-            src="./images/pizza-parlor.jpg"
-            alt="Pizza Parlor"
+            src="./images/girl-pizza.jpg"
+            alt="Pizza Oven"
           ></img>
         </div>
         <hr className="line"></hr>

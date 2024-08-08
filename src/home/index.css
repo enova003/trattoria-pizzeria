@@ -50,8 +50,6 @@
   flex: 1;
   margin-right: 20px;
   margin-left: 20px;
-  text-align: center;
-  /* font-size: 1.2rem; */
   line-height: 1.4;
 }
 
@@ -61,7 +59,19 @@
   display: block;
 }
 
-.home-text {
+.quiz {
+  font-size: 1.6rem;
+}
+
+.left-text {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.right-text {
+  text-align: right;
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -71,20 +81,22 @@
   .top-contact,
   .home-content,
   .footer,
-  .home-text {
+  .left-text,
+  .right-text,
+  .quiz {
     font-size: 10px;
   }
 
   .nav-links {
     margin: 15px auto;
     height: 30px;
+    border: 1.75px solid red;
   }
 
   .text-and-photos p {
     flex: 1;
     margin-right: 10px;
     margin-left: 10px;
-    text-align: center;
     font-size: 9px;
     line-height: 1.4;
   }
