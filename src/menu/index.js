@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./menu.css";
 
 function Menu() {
   return (
@@ -8,7 +8,7 @@ function Menu() {
         <img className="banner" src="./images/banner2.jpg" alt="banner" />
       </div>
       <div className="menu-content">
-        <h1 className="title">Menu</h1>
+      <h1 className="menu-title">Menu</h1>
         <hr className="line"></hr>
         <div className="menu">
           <div className="left-column">
@@ -178,13 +178,6 @@ function Menu() {
               <b>Cheese Ravioli | $7.99</b>
               <br />
             </p>
-            <h2 className="title">
-              Soft Drinks<hr className="entity-line"></hr>
-            </h2>
-            <p className="content">
-              Coke, Diet Coke, Coke Zero, Sprite, Barq's Root Beer, Dr. Pepper,
-              Sweet Tea, Unsweet Tea, Pink Lemonade.
-            </p>
           </div>
           <div className="right-column">
             <h2 className="title">
@@ -328,6 +321,13 @@ function Menu() {
               garlic, onions, mushrooms, anchovies, feta, bell peppers, black
               olives, green olives, ricotta cheese, spinach, artichoke hearts,
               jalapeño, banana peppers, pineapple.
+            </p>
+            <h2 className="title">
+              Soft Drinks<hr className="entity-line"></hr>
+            </h2>
+            <p className="content">
+              Coke, Diet Coke, Coke Zero, Sprite, Barq's Root Beer, Dr. Pepper,
+              Sweet Tea, Unsweet Tea, Pink Lemonade.
             </p>
             <p className="content">
               <b>*</b> Consuming raw or uncooked food may increase your risk of

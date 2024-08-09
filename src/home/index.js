@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css";
+import "./home.css";
 
 function Home() {
   return (
@@ -11,7 +11,7 @@ function Home() {
         <h1 className="title">Trattoria Pizza & Italian</h1>
         <hr className="line"></hr>
         <p className="quiz">
-          Not sure what to order?
+          Unsure what pizza to order?
           <br />
           Try taking our quick, 5-question pizza quiz
         </p>
