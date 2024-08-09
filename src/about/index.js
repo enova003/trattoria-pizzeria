@@ -45,8 +45,8 @@ function About() {
           ></img>
           <img
             className="photo-row"
-            src="./images/pasta.jpg"
-            alt="Fresh Pasta"
+            src="./images/tiramisu.jpg"
+            alt="Tiramisu"
           ></img>
         </div>
         <hr className="line"></hr>

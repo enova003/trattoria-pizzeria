@@ -82,4 +82,10 @@
   .left-paragraph {
     font-size: 10px;
   }
+
+  .photo-row {
+    max-width: 35%;
+    height: auto;
+    margin: 2%;
+  }
 }
