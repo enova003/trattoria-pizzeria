@@ -16,9 +16,17 @@
   font-size: 2rem;
 }
 
+.pizza-quiz-title {
+  font-size: 4rem;
+}
+
 @media only screen and (max-width: 600px) {
   .quiz-content {
     font-size: 10px;
+  }
+
+  .pizza-quiz-title {
+    font-size: 20px;
   }
 }
 

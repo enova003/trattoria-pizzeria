@@ -8,7 +8,7 @@ function Home() {
         <img className="banner" src="./images/banner-home.jpg" alt="banner" />
       </div>
       <div className="home-content">
-        <h1 className="title">Trattoria Pizza & Italian</h1>
+        <h1 className="home-title">Trattoria Pizza & Italian</h1>
         <hr className="line"></hr>
         <p className="quiz">
           Unsure what pizza to order?

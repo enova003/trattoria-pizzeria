@@ -8,7 +8,7 @@ function Quiz() {
         <img className="banner" src="./images/banner-4.jpg" alt="banner" />
       </div>
       <div className="quiz-content">
-        <h1 className="title">Pizza Quiz</h1>
+        <h1 className="pizza-quiz-title">Pizza Quiz</h1>
         <hr className="line"></hr>
       </div>
     </div>
