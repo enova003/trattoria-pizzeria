@@ -1,6 +1,3 @@
-// Question Types
-// 1. MCQs | Multiple Choice | single
-
 export const quiz = {
   topic: "Pizza Quiz",
   totalQuestions: 5,
@@ -8,8 +5,6 @@ export const quiz = {
     {
       question: "What type of sauce do you prefer as the base?",
       choices: ["Red sauce", "Alfredo sauce", "BBQ sauce", "Buffalo sauce"],
-      /* type: 'MCQs',
-        correctAnswer: 'const', */
     },
     {
       question: "What is your ideal topping combination?",
@@ -19,20 +14,14 @@ export const quiz = {
         "Lots of veggies",
         "A mix of veggies and meat",
       ],
-      /*type: 'MCQs',
-        correctAnswer: 'const', */
     },
     {
       question: "How do you feel about spicy or hot flavors?",
       choices: ["Not a fan", "I love it spicy"],
-      /*type: 'MCQs',
-        correctAnswer: 'All of the above', */
     },
     {
       question: "What type of meat do you like on your pizza?",
       choices: ["Chicken", "Steak", "Pepperoni", "No meat for me"],
-      /*         type: 'MCQs',
-        correctAnswer: 'const', */
     },
     {
       question: "What type of pizza sounds most appealing?",
@@ -42,8 +31,6 @@ export const quiz = {
         "Bold, strong, and flavorful",
         "Meaty and interesting",
       ],
-      /*         type: 'MCQs',
-        correctAnswer: 'const', */
     },
   ],
 };

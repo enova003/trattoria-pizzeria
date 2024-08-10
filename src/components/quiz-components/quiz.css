@@ -90,9 +90,5 @@
 .result p {
   font-size: 16px;
   font-weight: 500;
-}
-
-.result p span {
-  color: red;
-  font-size: 22px;
+  text-align: center;
 }

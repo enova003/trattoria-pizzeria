@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { quiz } from "./questions";
 import "./quiz.css";
 
@@ -28,12 +28,19 @@ const Quiz = () => {
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
     } else {
-      setActiveQuestion(0);
       handleQuestions();
       determineRecomendation();
+      setActiveQuestion(0);
       setShowResult(true);
     }
   };
+
+  useEffect(() => {
+    if (activeQuestion === questions.length - 1) {
+      handleQuestions();
+      determineRecomendation();
+    }
+  }); /* [userChoices] */
 
   const onAnswerSelected = (answer, index) => {
     setSelectedAnswerIndex(index);
@@ -43,42 +50,6 @@ const Quiz = () => {
       updatedChoices[activeQuestion] = answer;
       return updatedChoices;
     });
-  };
-
-  const determineRecomendation = () => {
-    const pizzaScores = [
-      { name: "The Bull", score: theBull },
-      { name: "Margherita", score: margherita },
-      { name: "Veggie", score: veggie },
-      { name: "Chicken Alfredo", score: chickenAlfredo },
-      { name: "BBQ Chicken", score: bbqChicken },
-      { name: "Philly Steak", score: phillySteak },
-      { name: "Buffalo Chicken", score: buffaloChicken },
-      { name: "Chicken Philly", score: chickenPhilly },
-      { name: "Tratt Hot", score: trattHot },
-      { name: "The Trattoria", score: theTrattoria },
-    ];
-
-    const maxScore = Math.max(...pizzaScores.map((pizza) => pizza.score));
-
-    const topPizzas = pizzaScores
-      .filter((pizza) => pizza.score === maxScore)
-      .map((pizza) => pizza.name);
-
-    const recommendationText =
-      topPizzas.length > 1
-        ? `We recommend you order: ${topPizzas.join(" or ")}`
-        : `We recommend you order: ${topPizzas[0]}`;
-
-    setPizzaRecommendation(recommendationText);
-  };
-
-  const handleQuestions = () => {
-    determineQuestionOne();
-    determineQuestionTwo();
-    determineQuestionThree();
-    determineQuestionFour();
-    determineQuestionFive();
   };
 
   const determineQuestionOne = () => {
@@ -227,6 +198,42 @@ const Quiz = () => {
     }
   };
 
+  const handleQuestions = () => {
+    determineQuestionOne();
+    determineQuestionTwo();
+    determineQuestionThree();
+    determineQuestionFour();
+    determineQuestionFive();
+  };
+
+  const determineRecomendation = () => {
+    const pizzaScores = [
+      { name: "The Bull", score: theBull },
+      { name: "Margherita", score: margherita },
+      { name: "Veggie", score: veggie },
+      { name: "Chicken Alfredo", score: chickenAlfredo },
+      { name: "BBQ Chicken", score: bbqChicken },
+      { name: "Philly Steak", score: phillySteak },
+      { name: "Buffalo Chicken", score: buffaloChicken },
+      { name: "Chicken Philly", score: chickenPhilly },
+      { name: "Tratt Hot", score: trattHot },
+      { name: "The Trattoria", score: theTrattoria },
+    ];
+
+    const maxScore = Math.max(...pizzaScores.map((pizza) => pizza.score));
+
+    const topPizzas = pizzaScores
+      .filter((pizza) => pizza.score === maxScore)
+      .map((pizza) => pizza.name);
+
+    const recommendationText =
+      topPizzas.length > 1
+        ? `We recommend you order one of these speciality pizzas: ${topPizzas.join(" or ")}`
+        : `We recommend you order this speciality pizza: ${topPizzas[0]}`;
+
+    setPizzaRecommendation(recommendationText);
+  };
+
   const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
 
   return (
@@ -269,157 +276,6 @@ const Quiz = () => {
           <div className="result">
             <h3>Results</h3>
             <p>
-              Based on your answers, we recommend you order: <br />{" "}
-              {pizzaRecommendation}{" "}
-            </p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
-
-export default Quiz;
-
-
-
-
-/* 
-import { useState } from "react";
-import { quiz } from "./questions";
-import "./quiz.css";
-
-const Quiz = () => {
-  const [activeQuestion, setActiveQuestion] = useState(0);
-  const [showResult, setShowResult] = useState(false);
-  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
-  const [pizzaRecommendation, setPizzaRecommendation] = useState("");
-  const [userChoices, setUserChoices] = useState(["", "", "", "", ""]);
-
-  const [pizzaScores, setPizzaScores] = useState({
-    theBull: 0,
-    margherita: 0,
-    veggie: 0,
-    chickenAlfredo: 0,
-    bbqChicken: 0,
-    phillySteak: 0,
-    buffaloChicken: 0,
-    chickenPhilly: 0,
-    trattHot: 0,
-    theTrattoria: 0
-  });
-
-  const { questions } = quiz;
-  const { question, choices } = questions[activeQuestion];
-
-  const onClickNext = () => {
-    setSelectedAnswerIndex(null);
-    if (activeQuestion !== questions.length - 1) {
-      setActiveQuestion((prev) => prev + 1);
-    } else {
-      setActiveQuestion(0);
-      handleQuestions();
-      determineRecommendation();
-      setShowResult(true);
-    }
-  };
-
-  const onAnswerSelected = (answer, index) => {
-    setSelectedAnswerIndex(index);
-    setUserChoices((prevChoices) => {
-      const updatedChoices = [...prevChoices];
-      updatedChoices[activeQuestion] = answer;
-      return updatedChoices;
-    });
-  };
-
-  const determineRecommendation = () => {
-    const maxScore = Math.max(...Object.values(pizzaScores));
-    const topPizzas = Object.entries(pizzaScores)
-      .filter(([_, score]) => score === maxScore)
-      .map(([name]) => name);
-
-    const recommendationText =
-      topPizzas.length > 1
-        ? `We recommend you order: ${topPizzas.join(" or ")}`
-        : `We recommend you order: ${topPizzas[0]}`;
-
-    setPizzaRecommendation(recommendationText);
-  };
-
-  const handleQuestions = () => {
-    const questionHandlers = [
-      determineQuestionOne,
-      determineQuestionTwo,
-      determineQuestionThree,
-      determineQuestionFour,
-      determineQuestionFive
-    ];
-    questionHandlers.forEach(handler => handler());
-  };
-
-  const updateScore = (pizzaType) => {
-    setPizzaScores(prevScores => ({
-      ...prevScores,
-      [pizzaType]: prevScores[pizzaType] + 1
-    }));
-  };
-
-  const determineQuestionOne = () => {
-    if (userChoices[0] === "Red sauce") {
-      ["theBull", "margherita", "veggie", "trattHot", "theTrattoria"].forEach(updateScore);
-    } else if (userChoices[0] === "Alfredo sauce") {
-      ["chickenAlfredo", "phillySteak", "chickenPhilly"].forEach(updateScore);
-    } else if (userChoices[0] === "BBQ sauce") {
-      updateScore("bbqChicken");
-    } else if (userChoices[0] === "Buffalo sauce") {
-      updateScore("buffaloChicken");
-    }
-  };
-
-  // Similar changes for other determineQuestion functions
-
-  const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
-
-  return (
-    <div className="quiz-wrapper">
-      <div className="quiz-container">
-        {!showResult ? (
-          <div>
-            <div>
-              <span className="active-question-no">
-                {addLeadingZero(activeQuestion + 1)}
-              </span>
-              <span className="total-question">
-                /{addLeadingZero(questions.length)}
-              </span>
-            </div>
-            <h2>{question}</h2>
-            <ul>
-              {choices.map((answer, index) => (
-                <li
-                  onClick={() => onAnswerSelected(answer, index)}
-                  key={`${answer}-${index}`}
-                  className={selectedAnswerIndex === index ? "selected-answer" : null}
-                >
-                  {answer}
-                </li>
-              ))}
-            </ul>
-            <div className="flex-right">
-              <button
-                onClick={onClickNext}
-                disabled={selectedAnswerIndex === null}
-              >
-                {activeQuestion === questions.length - 1 ? "Results" : "Next"}
-              </button>
-            </div>
-          </div>
-        ) : (
-          <div className="result">
-            <h3>Results</h3>
-            <p>
-              Based on your answers, we recommend you order: <br />
               {pizzaRecommendation}
             </p>
           </div>
@@ -430,4 +286,3 @@ const Quiz = () => {
 };
 
 export default Quiz;
-*/
