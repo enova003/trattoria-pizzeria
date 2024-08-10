@@ -7,26 +7,24 @@ const Quiz = () => {
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [showResult, setShowResult] = useState(false);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
-  const [result, setResult] = useState({
-    score: 0,
-    correctAnswers: 0,
-    wrongAnswers: 0,
-  });
+
+  const [pizzaRecommendation, setPizzaRecommendation] = useState("");
+  const [theBull, setTheBull] = useState(0);
+  const [margherita, setMargherita] = useState(0);
+  const [veggie, setVeggie] = useState(0);
+  const [chickenAlfredo, setChickenAlfredo] = useState(0);
+  const [bbqChicken, setBBQChicken] = useState(0);
+  const [phillySteak, setPhillySteak] = useState(0);
+  const [buffaloChicken, setBuffaloChicken] = useState(0);
+  const [chickenPhilly, setChickenPhilly] = useState(0);
+  const [trattHot, setTrattHot] = useState(0);
+  const [theTrattoria, setTheTrattoria] = useState(0);
 
   const { questions } = quiz;
   const { question, choices, correctAnswer } = questions[activeQuestion];
 
   const onClickNext = () => {
     setSelectedAnswerIndex(null);
-    setResult((prev) =>
-      selectedAnswer
-        ? {
-            ...prev,
-            score: prev.score + 5,
-            correctAnswers: prev.correctAnswers + 1,
-          }
-        : { ...prev, wrongAnswers: prev.wrongAnswers + 1 }
-    );
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1);
     } else {
@@ -89,13 +87,13 @@ const Quiz = () => {
               Total Question: <span>{questions.length}</span>
             </p>
             <p>
-              Total Score:<span> {result.score}</span>
+              Total Score:<span> example </span>
             </p>
             <p>
-              Correct Answers:<span> {result.correctAnswers}</span>
+              Correct Answers:<span> example</span>
             </p>
             <p>
-              Wrong Answers:<span> {result.wrongAnswers}</span>
+              Wrong Answers:<span> example</span>
             </p>
           </div>
         )}

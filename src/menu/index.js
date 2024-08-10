@@ -259,7 +259,7 @@ function Menu() {
               Pizza<hr className="entity-line"></hr>
             </h2>
             <p className="content">
-              <h3>Classics</h3> <br />{" "}
+              <h3>Classic Pies</h3> <br />{" "}
               <b>Small $9.99 | Medium $15.99 | Large $19.99</b> <br /> <br />
               <b>Cheese</b>
               <br />A simple, delicious pizza topped with our house blend of
@@ -272,7 +272,7 @@ function Menu() {
               Garlic, olive oil, and dried basil.
             </p>
             <p className="content">
-              <h3>Specialty</h3> <br /> <b>Medium $19.99 | Large $24.99</b>{" "}
+              <h3>Specialty Pies</h3> <br /> <b>Medium $19.99 | Large $24.99</b>{" "}
               <br /> <br />
               <b>The Bull</b>
               <br />
