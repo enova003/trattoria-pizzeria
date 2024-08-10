@@ -18,8 +18,8 @@ function Menu() {
             <p className="content">
               <b>Garlic Ballz (World Famous) | $7.99</b>
               <br />
-              Freshly baked ballz drizzled with garlic butter, topped with
-              parmesan. Served with our homemade marinara (You will be hooked).
+              Freshly baked dough balls drizzled with garlic butter and topped with
+              parmesan. Served with our homemade marinara (you will be hooked).
             </p>
             <p className="content">
               <b>Trattoria Starter | $6.99</b>
@@ -30,13 +30,13 @@ function Menu() {
             <p className="content">
               <b>Bruschetta | $8.99</b>
               <br />
-              Fresh, diced tomatoes, garlic, basil olive oil. Served on our
+              Freshly diced tomatoes, fresh garlic, fresh basil, and olive oil. Served on our
               housemade crostini.
             </p>
             <p className="content">
               <b>Soft Bread Sticks | $9.99</b>
               <br />
-              Our bread sticks baked fresh to order. Served with parmesan and a
+              Freshly baked breadsticks. Served with parmesan and a
               side of housemade marinara or alfredo.
             </p>
             <p className="content">
@@ -66,7 +66,7 @@ function Menu() {
             <p className="content">
               <b>Blackened Tuna Quesadilla* | $16.99</b>
               <br />
-              Seared blackened tuna steak, onions, black olives and cheese.
+              Seared, blackened tuna steak, onions, black olives and cheese.
               Served with a side of salsa.
             </p>
             <h2 className="title">
@@ -87,7 +87,7 @@ function Menu() {
             <p className="content">
               <b>Antipasto | $15.99</b>
               <br />
-              Fresh hearts of romain, Italian meats, and Italian cheeses.
+              Fresh hearts of romaine, Italian meats, and Italian cheeses.
             </p>
             <p className="content">
               (Dressing: Ranch, Italian, Caesar, or Blue Cheese)
@@ -98,17 +98,17 @@ function Menu() {
             <p className="content">
               <b>Philly Cheese Steak | $14.99</b>
               <br />
-              Steak, onions, peppers, mushrooms, and white American cheese.
+              Steak, onions, bell peppers, mushrooms, and white American cheese.
             </p>
             <p className="content">
               <b>Chicken Philly Cheese | $14.99</b>
               <br />
-              Chicken, onions, peppers, mushrooms, and white American cheese.
+              Chicken, onions, bell peppers, mushrooms, and white American cheese.
             </p>
             <p className="content">
               <b>Italian Steak | $14.99</b>
               <br />
-              Salami, steak, onions, peppers, and zesty Italian dressing.
+              Salami, steak, onions, bell peppers, and zesty Italian dressing.
             </p>
             <p className="content">
               <b>Italian | $14.99</b>
@@ -134,17 +134,17 @@ function Menu() {
             <p className="content">
               <b>Tiramisu | $7.99</b>
               <br />
-              Classic Italian, espresso dipped lady fingers, layered with
+              Classic Italian espresso dipped lady fingers, layered with
               whipped sweet mascarpone cheese; finished with cocoa powder.
             </p>
             <p className="content">
               <b>Peanut Butter Pie | $7.99</b>
               <br />
-              Housemade creamy, delcious peanut butter pie.
+              Housemade, creamy, delicious peanut butter pie.
             </p>
             <p className="content">
               <b>Cheesecake | $7.99</b>
-              <br />A slic of white, rich, and creamy cheesecake.
+              <br />A slice of white, rich, and creamy cheesecake.
             </p>
             <p className="content">
               <b>Key Lime Pie | $7.99</b>
@@ -187,43 +187,43 @@ function Menu() {
               <b>Greg's Baked Ziti | $15.99</b>
               <br /> Ziti noodles topped with our housemade marinara and
               smothered with our house blend of cheeses. Baked golden brown with
-              your choice of meatballs or italian sausage.
+              your choice of meatballs or Italian sausage.
             </p>
             <p className="content">
               <b>Manicotti | $15.99</b>
               <br />
               Ricotta stuffed pasta topped with our housemade marinara and
               smothered with our house blend of cheeses. Baked golden brown with
-              your choice of meatballs or italian sausage.
+              your choice of meatballs or Italian sausage.
             </p>
             <p className="content">
               <b>Chicken Alfredo | $15.99</b>
               <br />
-              Pan-seared chicken breast and ziti noodles in our housemade
+              Pan-seared chicken breast and ziti noodles smothered in our housemade
               alfredo sauce.
             </p>
             <p className="content">
               <b>Spaghetti and Meatballs | $14.99</b>
               <br />
-              Angel hair pasta with our housemade marinara; topped with
+              Angel hair pasta served with our housemade marinara; topped with
               meatballs and parmesan cheese.
             </p>
             <p className="content">
               <b>Shrimp & Garlic Ravioli | $16.99</b>
               <br />
-              Ravioli filled with shrimp and roasted garlic. Topped with our
+              Ravioli filled with shrimp and roasted garlic; topped with our
               housemade alfredo.
             </p>
             <p className="content">
               <b>Cheese Ravioli | $14.99</b>
               <br />
-              Ravioli filled with italian cheeses, topped with housemade
+              Ravioli filled with Italian cheeses; topped with housemade
               marinara and parmesan cheese.
             </p>
             <p className="content">
               <b>Four Cheese Beef Lasagna | $17.99</b>
               <br />A house favorite! Layers of pasta, beef, housemade marinara,
-              and a delicious blend of 4 italian cheeses baked golden brown.
+              and a delicious blend of four Italian cheeses baked golden brown.
             </p>
             <p className="content">(Side salad or soup | $2.99)</p>
             <h2 className="title">
@@ -283,24 +283,24 @@ function Menu() {
               sliced tomatoes.
               <br /> <br /> <b>Veggie</b>
               <br />
-              Spinach, peppers, onions, mushrooms, black olives, and feta
+              Spinach, bell peppers, onions, mushrooms, black olives, and feta
               cheese.
               <br /> <br /> <b>Chicken Alfredo</b>
               <br />
               Chicken, onions, mushrooms, and our housemade alfredo sauce.
               <br /> <br /> <b>BBQ Chicken</b>
               <br />
-              Chicken, onions, peppers, and tangy BBQ sauce.
+              Chicken, onions, bell peppers, and tangy BBQ sauce.
               <br /> <br /> <b>Philly Steak</b>
               <br />
-              Steak, onions, peppers, mushrooms, and our housemade alfredo
+              Steak, onions, bell peppers, mushrooms, and our housemade alfredo
               sauce.
-              <br /> <br /> <b>Buffalo Chicken Pizza</b>
+              <br /> <br /> <b>Buffalo Chicken</b>
               <br />
               Chicken, bacon, onions, and buffalo sauce.
               <br /> <br /> <b>Chicken Philly</b>
               <br />
-              Chicken, onions, peppers, mushrooms, and our housemade alfredo
+              Chicken, onions, bell peppers, mushrooms, and our housemade alfredo
               sauce.
               <br /> <br /> <b>Tratt Hot</b>
               <br />
@@ -316,7 +316,7 @@ function Menu() {
             </p>
             <p className="content">
               <h3>Build Your Own</h3> <br />{" "}
-              <b>Meat Items $2.99 | Vegetable Items $1.99</b> <br /> <br />
+              <b>Meat Toppings $2.99 | Vegetable Toppings $1.99</b> <br /> <br />
               Pepperoni, sausage, bacon, ham, chicken, meatballs, salami,
               garlic, onions, mushrooms, anchovies, feta, bell peppers, black
               olives, green olives, ricotta cheese, spinach, artichoke hearts,
@@ -330,7 +330,7 @@ function Menu() {
               Sweet Tea, Unsweet Tea, Pink Lemonade.
             </p>
             <p className="content">
-              <b>*</b> Consuming raw or uncooked food may increase your risk of
+              <b>*</b> Consuming raw or undercooked food may increase your risk of
               foodborne illness.
             </p>
           </div>
