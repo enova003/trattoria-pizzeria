@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Menu from "./menu/index";
 import Home from "./home/index";
 import About from "./about/index";
-import Quiz from "./pizza-quiz/index";
+import PizzaQuiz from "./pizza-quiz/index";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -35,7 +35,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
-        <Route path="/pizza-quiz" element={<Quiz />} />
+        <Route path="/pizza-quiz" element={<PizzaQuiz />} />
       </Routes>
       <div className="footer">
         Trattoria Pizza & Italian &copy; | 251-375-0076 | 11611 US Highway 31 Spanish

@@ -1,7 +1,9 @@
 import React from "react";
 import "./pizza-quiz.css";
 
-function Quiz() {
+import Quiz from "../components/quiz-components/quiz";
+
+function PizzaQuiz() {
   return (
     <div>
       <div className="quiz-banner">
@@ -11,8 +13,9 @@ function Quiz() {
         <h1 className="pizza-quiz-title">Pizza Quiz</h1>
         <hr className="line"></hr>
       </div>
+      <Quiz />
     </div>
   );
 }
 
-export default Quiz;
+export default PizzaQuiz;
