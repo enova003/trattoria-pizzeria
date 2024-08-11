@@ -4,6 +4,7 @@ import banner from "../images/banner-home.jpg";
 import oilPour from "../images/pizza-oil-pour.jpg";
 import tossingImage from "../images/pizza-toss.jpg";
 import girlImage from "../images/girl-pizza.jpg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -19,9 +20,9 @@ function Home() {
           <br />
           Try taking our quick, 4-question pizza quiz
         </p>
-        <a href="./pizza-quiz/index" className="nav-links">
+        <Link to="/pizza-quiz" className="nav-links">
           Pizza Quiz
-        </a>
+        </Link>
         <hr className="line"></hr>
         <div className="catering">
           <p className="left-text">
