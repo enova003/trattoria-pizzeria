@@ -13,7 +13,7 @@ function PizzaQuiz() {
         <h1 className="pizza-quiz-title">Pizza Quiz</h1>
         <hr className="line"></hr>
         <p className="left-paragraph">
-          This brief, five-question quiz is crafted to offer you a personalized
+          This brief, four-question quiz is crafted to offer you a personalized
           recommendation tailored to our specialty pizzas. By answering these
           questions, you'll receive a suggestion that aligns perfectly with your
           unique tastes and preferences.

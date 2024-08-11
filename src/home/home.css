@@ -25,7 +25,7 @@
   color: red;
   border: 2.5px solid red;
   background-color: white;
-  font-size: calc(5px + 2vmin);
+  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +87,32 @@
   font-size: 4rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .text-and-photos {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .text-and-photos img {
+    order: 1;
+  }
+
+  .text-and-photos p {
+    order: 2;
+    flex: 1;
+    margin-top: 5%;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .div-photos {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .top-contact,
   .home-content,
@@ -94,30 +120,27 @@
   .left-text,
   .right-text,
   .quiz {
-    font-size: 10px;
+    font-size: calc(5px + 2vmin);
   }
 
   .nav-links {
     margin: 15px auto;
     height: 30px;
     border: 1.75px solid red;
-  }
-
-  .text-and-photos p {
-    flex: 1;
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 9px;
-    line-height: 1.4;
-  }
-
-  .div-photos {
-    max-width: 55%;
-    height: auto;
-    display: block;
+    font-size: calc(5px + 2vmin);
   }
 
   .home-title {
     font-size: 20px;
+  }
+
+  .text-and-photos p {
+    order: 2;
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 1.4;
+    font-size: calc(5px + 2vmin);
+    text-align: left;
   }
 }

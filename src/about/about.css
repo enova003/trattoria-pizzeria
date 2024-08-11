@@ -81,7 +81,7 @@
   .name,
   .paragraph,
   .left-paragraph {
-    font-size: 10px;
+    font-size: calc(5px + 2vmin);
   }
 
   .photo-row {

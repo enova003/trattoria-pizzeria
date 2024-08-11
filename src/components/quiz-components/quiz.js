@@ -101,13 +101,13 @@ const Quiz = () => {
   };
 
   const determineQuestionThree = () => {
-    if (userChoices[2] === "I love it spicy") {
+    if (userChoices[2] === "That sounds great") {
       setTrattHot((prevValue) => prevValue + 2);
       setBBQChicken((prevValue) => prevValue + 1);
       setBuffaloChicken((prevValue) => prevValue + 1);
     }
 
-    if (userChoices[2] === "Not a fan") {
+    if (userChoices[2] === "Not now") {
       setMargherita((prevValue) => prevValue + 1);
       setVeggie((prevValue) => prevValue + 1);
       setTheBull((prevValue) => prevValue + 1);
@@ -171,8 +171,8 @@ const Quiz = () => {
 
     const recommendationText =
       topPizzas.length > 1
-        ? `We recommend you order ${topPizzas.join(" or ")}`
-        : `We recommend you order ${topPizzas[0]}`;
+        ? `We recommend ordering ${topPizzas.join(" or ")}`
+        : `We recommend ordering ${topPizzas[0]}`;
 
     setPizzaRecommendation(recommendationText);
   };

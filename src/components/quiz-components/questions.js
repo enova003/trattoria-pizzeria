@@ -3,7 +3,7 @@ export const quiz = {
   totalQuestions: 4,
   questions: [
     {
-      question: "What type of sauce do you prefer as the base?",
+      question: "What type of sauce would you prefer as the base?",
       choices: ["Red sauce", "Alfredo sauce", "BBQ sauce", "Buffalo sauce"],
     },
     {
@@ -16,11 +16,11 @@ export const quiz = {
       ],
     },
     {
-      question: "How do you feel about spicy or hot flavors?",
-      choices: ["Not a fan", "I love it spicy"],
+      question: "How are you feeling about spicy or hot flavors?",
+      choices: ["Not now", "That sounds great"],
     },
     {
-      question: "What type of meat do you like on your pizza?",
+      question: "What type of meat would you like on your pizza?",
       choices: ["Chicken", "Steak", "Pepperoni", "No meat for me"],
     },
   ],

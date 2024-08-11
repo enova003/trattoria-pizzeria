@@ -13,7 +13,7 @@ function Home() {
         <p className="quiz">
           Unsure what pizza to order?
           <br />
-          Try taking our quick, 5-question pizza quiz
+          Try taking our quick, 4-question pizza quiz
         </p>
         <a href="./pizza-quiz" className="nav-links">
           Pizza Quiz
