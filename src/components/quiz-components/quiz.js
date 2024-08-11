@@ -40,7 +40,7 @@ const Quiz = () => {
       handleQuestions();
       determineRecomendation();
     }
-  }, [userChoices]); /* [userChoices] */
+  }, [userChoices]);
 
   const onAnswerSelected = (answer, index) => {
     setSelectedAnswerIndex(index);

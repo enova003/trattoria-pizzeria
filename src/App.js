@@ -8,7 +8,7 @@ import About from "./about/index";
 import PizzaQuiz from "./pizza-quiz/index";
 import logo from "./images/trattoria_logo.png";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
