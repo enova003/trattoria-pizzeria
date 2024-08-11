@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/trattoria-pizzeria/static/css/main.368f1a57.css",
+    "main.css": "/trattoria-pizzeria/static/css/main.b52b3810.css",
     "main.js": "/trattoria-pizzeria/static/js/main.2d9be077.js",
     "static/js/453.7da8f4cb.chunk.js": "/trattoria-pizzeria/static/js/453.7da8f4cb.chunk.js",
     "static/media/pasta-and-pizza.jpg": "/trattoria-pizzeria/static/media/pasta-and-pizza.31134cec029b48980329.jpg",
@@ -16,12 +16,12 @@
     "static/media/girl-pizza.jpg": "/trattoria-pizzeria/static/media/girl-pizza.d54ca895ab006d57b404.jpg",
     "static/media/trattoria_logo.png": "/trattoria-pizzeria/static/media/trattoria_logo.6657066acf43b29d8167.png",
     "index.html": "/trattoria-pizzeria/index.html",
-    "main.368f1a57.css.map": "/trattoria-pizzeria/static/css/main.368f1a57.css.map",
+    "main.b52b3810.css.map": "/trattoria-pizzeria/static/css/main.b52b3810.css.map",
     "main.2d9be077.js.map": "/trattoria-pizzeria/static/js/main.2d9be077.js.map",
     "453.7da8f4cb.chunk.js.map": "/trattoria-pizzeria/static/js/453.7da8f4cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.368f1a57.css",
+    "static/css/main.b52b3810.css",
     "static/js/main.2d9be077.js"
   ]
 }
