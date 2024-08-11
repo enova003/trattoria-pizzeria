@@ -1,11 +1,15 @@
 import React from "react";
 import "./home.css";
+import banner from "../images/banner-home.jpg";
+import oilPour from "../images/pizza-oil-pour.jpg";
+import tossingImage from "../images/pizza-toss.jpg";
+import girlImage from "../images/girl-pizza.jpg";
 
 function Home() {
   return (
     <div>
       <div className="home-banner">
-        <img className="banner" src="./images/banner-home.jpg" alt="banner" />
+        <img className="banner" src={banner} alt="banner" />
       </div>
       <div className="home-content">
         <h1 className="home-title">Trattoria Pizza & Italian</h1>
@@ -43,14 +47,14 @@ function Home() {
           </p>
           <img
             className="div-photos"
-            src="./images/pizza-oil-pour.jpg"
+            src={oilPour}
             alt="Oil Pour"
           ></img>
         </div>
         <div className="text-and-photos">
           <img
             className="div-photos"
-            src="./images/pizza-toss.jpg"
+            src={tossingImage}
             alt="Tossing Pies"
           ></img>
           <p className="left-text">
@@ -70,7 +74,7 @@ function Home() {
           </p>
           <img
             className="div-photos"
-            src="./images/girl-pizza.jpg"
+            src={girlImage}
             alt="Pizza Oven"
           ></img>
         </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import "./menu.css";
+import banner from "../images/banner2.jpg";
 
 function Menu() {
   return (
     <div>
       <div className="menu-banner">
-        <img className="banner" src="./images/banner2.jpg" alt="banner" />
+        <img className="banner" src={banner} alt="banner" />
       </div>
       <div className="menu-content">
         <h1 className="menu-title">Menu</h1>

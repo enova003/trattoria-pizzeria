@@ -6,6 +6,7 @@ import Menu from "./menu/index";
 import Home from "./home/index";
 import About from "./about/index";
 import PizzaQuiz from "./pizza-quiz/index";
+import logo from "./images/trattoria_logo.png";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -15,7 +16,7 @@ function App() {
       <div className="top-border">
         <img
           className="logo"
-          src="./images/trattoria_logo.png"
+          src={logo}
           alt="Trattoria Logo"
         />
         <p className="top-contact">

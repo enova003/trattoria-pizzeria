@@ -1,11 +1,16 @@
 import React from "react";
 import "./about.css";
+import banner from "../images/banner3.jpg";
+import trattoriaImage from "../images/trattoria-sign.jpg";
+import pizzaPastaImage from "../images/pasta-and-pizza.jpg";
+import freshPizzaImage from "../images/neopolitan-pizza.jpg";
+import tiramisuImage from "../images/tiramisu.jpg";
 
 function About() {
   return (
     <div>
       <div className="about-banner">
-        <img className="banner" src="./images/banner3.jpg" alt="banner" />
+        <img className="banner" src={banner} alt="banner" />
       </div>
       <div className="about-content">
         <h1 className="about-title">About</h1>
@@ -30,22 +35,22 @@ function About() {
         <div className="photos">
           <img
             className="photo-row"
-            src="./images/trattoria-sign.jpg"
+            src={trattoriaImage}
             alt="Trattoria"
           ></img>
           <img
             className="photo-row"
-            src="./images/pasta-and-pizza.jpg"
+            src={pizzaPastaImage}
             alt="Pizza & Pasta"
           ></img>
           <img
             className="photo-row"
-            src="./images/neopolitan-pizza.jpg"
+            src={freshPizzaImage}
             alt="Fresh Pizza"
           ></img>
           <img
             className="photo-row"
-            src="./images/tiramisu.jpg"
+            src={tiramisuImage}
             alt="Tiramisu"
           ></img>
         </div>
