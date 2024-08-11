@@ -1,15 +1,15 @@
 export const quiz = {
   topic: "Pizza Quiz",
-  totalQuestions: 5,
+  totalQuestions: 4,
   questions: [
     {
       question: "What type of sauce do you prefer as the base?",
       choices: ["Red sauce", "Alfredo sauce", "BBQ sauce", "Buffalo sauce"],
     },
     {
-      question: "What is your ideal topping combination?",
+      question: "What toppings are you in the mood for?",
       choices: [
-        "Lots of cheese",
+        "Delicious cheeses",
         "A variety of meats",
         "Lots of veggies",
         "A mix of veggies and meat",
@@ -22,15 +22,6 @@ export const quiz = {
     {
       question: "What type of meat do you like on your pizza?",
       choices: ["Chicken", "Steak", "Pepperoni", "No meat for me"],
-    },
-    {
-      question: "What type of pizza sounds most appealing?",
-      choices: [
-        "Simple yet delicious",
-        "Rich and creamy",
-        "Bold, strong, and flavorful",
-        "Meaty and interesting",
-      ],
     },
   ],
 };

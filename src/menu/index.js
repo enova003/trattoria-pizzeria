@@ -8,7 +8,7 @@ function Menu() {
         <img className="banner" src="./images/banner2.jpg" alt="banner" />
       </div>
       <div className="menu-content">
-      <h1 className="menu-title">Menu</h1>
+        <h1 className="menu-title">Menu</h1>
         <hr className="line"></hr>
         <div className="menu">
           <div className="left-column">
@@ -16,10 +16,11 @@ function Menu() {
               Appetizers<hr className="entity-line"></hr>
             </h2>
             <p className="content">
-              <b>Garlic Ballz (World Famous) | $7.99</b>
+              <b>Garlic Balls | $7.99</b>
               <br />
-              Freshly baked dough balls drizzled with garlic butter and topped with
-              parmesan. Served with our homemade marinara (you will be hooked).
+              Freshly baked dough balls drizzled with garlic butter and topped
+              with parmesan. Served with our homemade marinara (you will be
+              hooked).
             </p>
             <p className="content">
               <b>Trattoria Starter | $6.99</b>
@@ -30,14 +31,14 @@ function Menu() {
             <p className="content">
               <b>Bruschetta | $8.99</b>
               <br />
-              Freshly diced tomatoes, fresh garlic, fresh basil, and olive oil. Served on our
-              housemade crostini.
+              Freshly diced tomatoes, fresh garlic, fresh basil, and olive oil.
+              Served on our housemade crostini.
             </p>
             <p className="content">
               <b>Soft Bread Sticks | $9.99</b>
               <br />
-              Freshly baked breadsticks. Served with parmesan and a
-              side of housemade marinara or alfredo.
+              Freshly baked breadsticks. Served with parmesan and a side of
+              housemade marinara or alfredo.
             </p>
             <p className="content">
               <b>Insalata Caprese | $9.99</b>
@@ -103,7 +104,8 @@ function Menu() {
             <p className="content">
               <b>Chicken Philly Cheese | $14.99</b>
               <br />
-              Chicken, onions, bell peppers, mushrooms, and white American cheese.
+              Chicken, onions, bell peppers, mushrooms, and white American
+              cheese.
             </p>
             <p className="content">
               <b>Italian Steak | $14.99</b>
@@ -134,8 +136,8 @@ function Menu() {
             <p className="content">
               <b>Tiramisu | $7.99</b>
               <br />
-              Classic Italian espresso dipped lady fingers, layered with
-              whipped sweet mascarpone cheese; finished with cocoa powder.
+              Classic Italian espresso dipped lady fingers, layered with whipped
+              sweet mascarpone cheese; finished with cocoa powder.
             </p>
             <p className="content">
               <b>Peanut Butter Pie | $7.99</b>
@@ -152,9 +154,11 @@ function Menu() {
               Please ask about this seasonal item.
             </p>
             <p className="content">
-              <b>Dessert Ballz | $7.99</b>
+              <b>Dessert Balls | $7.99</b>
               <br />
-              Try them drunken for $8.99.
+              Sweet, soft, sugary dough balls, drizzled generously with
+              chocolate and a creamy housemade icing. Try them drunken for
+              $8.99.
             </p>
             <h2 className="title">
               Kid's Menu<hr className="entity-line"></hr>
@@ -199,8 +203,8 @@ function Menu() {
             <p className="content">
               <b>Chicken Alfredo | $15.99</b>
               <br />
-              Pan-seared chicken breast and ziti noodles smothered in our housemade
-              alfredo sauce.
+              Pan-seared chicken breast and ziti noodles smothered in our
+              housemade alfredo sauce.
             </p>
             <p className="content">
               <b>Spaghetti and Meatballs | $14.99</b>
@@ -300,8 +304,8 @@ function Menu() {
               Chicken, bacon, onions, and buffalo sauce.
               <br /> <br /> <b>Chicken Philly</b>
               <br />
-              Chicken, onions, bell peppers, mushrooms, and our housemade alfredo
-              sauce.
+              Chicken, onions, bell peppers, mushrooms, and our housemade
+              alfredo sauce.
               <br /> <br /> <b>Tratt Hot</b>
               <br />
               Pepperoni, fiery Italian seasoning, chopped garlic, and parsley,
@@ -316,7 +320,8 @@ function Menu() {
             </p>
             <p className="content">
               <h3>Build Your Own</h3> <br />{" "}
-              <b>Meat Toppings $2.99 | Vegetable Toppings $1.99</b> <br /> <br />
+              <b>Meat Toppings $2.99 | Vegetable Toppings $1.99</b> <br />{" "}
+              <br />
               Pepperoni, sausage, bacon, ham, chicken, meatballs, salami,
               garlic, onions, mushrooms, anchovies, feta, bell peppers, black
               olives, green olives, ricotta cheese, spinach, artichoke hearts,
@@ -330,8 +335,8 @@ function Menu() {
               Sweet Tea, Unsweet Tea, Pink Lemonade.
             </p>
             <p className="content">
-              <b>*</b> Consuming raw or undercooked food may increase your risk of
-              foodborne illness.
+              <b>*</b> Consuming raw or undercooked food may increase your risk
+              of foodborne illness.
             </p>
           </div>
         </div>

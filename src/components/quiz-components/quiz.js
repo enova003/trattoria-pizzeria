@@ -40,7 +40,7 @@ const Quiz = () => {
       handleQuestions();
       determineRecomendation();
     }
-  }); /* [userChoices] */
+  }, [userChoices]); /* [userChoices] */
 
   const onAnswerSelected = (answer, index) => {
     setSelectedAnswerIndex(index);
@@ -55,43 +55,35 @@ const Quiz = () => {
   const determineQuestionOne = () => {
     if (userChoices[0] === "Red sauce") {
       setTheBull((prevValue) => prevValue + 1);
-
       setMargherita((prevValue) => prevValue + 1);
-
       setVeggie((prevValue) => prevValue + 1);
-
       setTrattHot((prevValue) => prevValue + 1);
-
       setTheTrattoria((prevValue) => prevValue + 1);
     }
 
     if (userChoices[0] === "Alfredo sauce") {
-      setChickenAlfredo((prevValue) => prevValue + 1);
-
-      setPhillySteak((prevValue) => prevValue + 1);
-
-      setChickenPhilly((prevValue) => prevValue + 1);
+      setChickenAlfredo((prevValue) => prevValue + 3);
+      setPhillySteak((prevValue) => prevValue + 3);
+      setChickenPhilly((prevValue) => prevValue + 3);
     }
 
     if (userChoices[0] === "BBQ sauce") {
-      setBBQChicken((prevValue) => prevValue + 1);
+      setBBQChicken((prevValue) => prevValue + 3);
     }
 
     if (userChoices[0] === "Buffalo sauce") {
-      setBuffaloChicken((prevValue) => prevValue + 1);
+      setBuffaloChicken((prevValue) => prevValue + 3);
     }
   };
 
   const determineQuestionTwo = () => {
-    if (userChoices[1] === "Lots of cheese") {
+    if (userChoices[1] === "Delicious cheeses") {
       setMargherita((prevValue) => prevValue + 1);
     }
 
     if (userChoices[1] === "A variety of meats") {
       setTheBull((prevValue) => prevValue + 1);
-
       setBuffaloChicken((prevValue) => prevValue + 1);
-
       setTrattHot((prevValue) => prevValue + 1);
     }
 
@@ -101,39 +93,27 @@ const Quiz = () => {
 
     if (userChoices[1] === "A mix of veggies and meat") {
       setTheTrattoria((prevValue) => prevValue + 1);
-
       setChickenPhilly((prevValue) => prevValue + 1);
-
       setPhillySteak((prevValue) => prevValue + 1);
-
       setBBQChicken((prevValue) => prevValue + 1);
-
       setChickenAlfredo((prevValue) => prevValue + 1);
     }
   };
 
   const determineQuestionThree = () => {
     if (userChoices[2] === "I love it spicy") {
-      setTrattHot((prevValue) => prevValue + 1);
-
+      setTrattHot((prevValue) => prevValue + 2);
       setBBQChicken((prevValue) => prevValue + 1);
-
       setBuffaloChicken((prevValue) => prevValue + 1);
     }
 
     if (userChoices[2] === "Not a fan") {
       setMargherita((prevValue) => prevValue + 1);
-
       setVeggie((prevValue) => prevValue + 1);
-
       setTheBull((prevValue) => prevValue + 1);
-
       setChickenAlfredo((prevValue) => prevValue + 1);
-
       setPhillySteak((prevValue) => prevValue + 1);
-
       setChickenPhilly((prevValue) => prevValue + 1);
-
       setTheTrattoria((prevValue) => prevValue + 1);
     }
   };
@@ -141,11 +121,8 @@ const Quiz = () => {
   const determineQuestionFour = () => {
     if (userChoices[3] === "Chicken") {
       setBuffaloChicken((prevValue) => prevValue + 1);
-
       setChickenAlfredo((prevValue) => prevValue + 1);
-
       setBBQChicken((prevValue) => prevValue + 1);
-
       setChickenPhilly((prevValue) => prevValue + 1);
     }
 
@@ -155,46 +132,13 @@ const Quiz = () => {
 
     if (userChoices[3] === "Pepperoni") {
       setTheBull((prevValue) => prevValue + 1);
-
       setTrattHot((prevValue) => prevValue + 1);
-
       setTheTrattoria((prevValue) => prevValue + 1);
     }
 
     if (userChoices[3] === "No meat for me") {
-      setMargherita((prevValue) => prevValue + 1);
-
-      setVeggie((prevValue) => prevValue + 1);
-    }
-  };
-
-  const determineQuestionFive = () => {
-    if (userChoices[4] === "Simple yet delicious") {
-      setVeggie((prevValue) => prevValue + 1);
-
-      setMargherita((prevValue) => prevValue + 1);
-    }
-
-    if (userChoices[4] === "Rich and creamy") {
-      setChickenAlfredo((prevValue) => prevValue + 1);
-
-      setPhillySteak((prevValue) => prevValue + 1);
-
-      setChickenPhilly((prevValue) => prevValue + 1);
-    }
-
-    if (userChoices[4] === "Bold, strong, and flavorful") {
-      setTrattHot((prevValue) => prevValue + 1);
-
-      setBBQChicken((prevValue) => prevValue + 1);
-
-      setBuffaloChicken((prevValue) => prevValue + 1);
-    }
-
-    if (userChoices[4] === "Meaty and interesting") {
-      setTheTrattoria((prevValue) => prevValue + 1);
-
-      setTheBull((prevValue) => prevValue + 1);
+      setMargherita((prevValue) => prevValue + 3);
+      setVeggie((prevValue) => prevValue + 3);
     }
   };
 
@@ -203,20 +147,19 @@ const Quiz = () => {
     determineQuestionTwo();
     determineQuestionThree();
     determineQuestionFour();
-    determineQuestionFive();
   };
 
   const determineRecomendation = () => {
     const pizzaScores = [
       { name: "The Bull", score: theBull },
-      { name: "Margherita", score: margherita },
-      { name: "Veggie", score: veggie },
-      { name: "Chicken Alfredo", score: chickenAlfredo },
-      { name: "BBQ Chicken", score: bbqChicken },
-      { name: "Philly Steak", score: phillySteak },
-      { name: "Buffalo Chicken", score: buffaloChicken },
-      { name: "Chicken Philly", score: chickenPhilly },
-      { name: "Tratt Hot", score: trattHot },
+      { name: "a Margherita pizza", score: margherita },
+      { name: "a Veggie pizza", score: veggie },
+      { name: "a Chicken Alfredo pizza", score: chickenAlfredo },
+      { name: "a BBQ Chicken pizza", score: bbqChicken },
+      { name: "a Philly Steak pizza", score: phillySteak },
+      { name: "a Buffalo Chicken pizza", score: buffaloChicken },
+      { name: "a Chicken Philly pizza", score: chickenPhilly },
+      { name: "a Tratt Hot pizza", score: trattHot },
       { name: "The Trattoria", score: theTrattoria },
     ];
 
@@ -228,8 +171,8 @@ const Quiz = () => {
 
     const recommendationText =
       topPizzas.length > 1
-        ? `We recommend you order one of these speciality pizzas: ${topPizzas.join(" or ")}`
-        : `We recommend you order this speciality pizza: ${topPizzas[0]}`;
+        ? `We recommend you order ${topPizzas.join(" or ")}`
+        : `We recommend you order ${topPizzas[0]}`;
 
     setPizzaRecommendation(recommendationText);
   };
@@ -275,9 +218,7 @@ const Quiz = () => {
         ) : (
           <div className="result">
             <h3>Results</h3>
-            <p>
-              {pizzaRecommendation}
-            </p>
+            <p>{pizzaRecommendation}</p>
           </div>
         )}
       </div>
