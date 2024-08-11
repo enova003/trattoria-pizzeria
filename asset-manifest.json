@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/trattoria-pizzeria/static/css/main.368f1a57.css",
+    "main.js": "/trattoria-pizzeria/static/js/main.2d9be077.js",
+    "static/js/453.7da8f4cb.chunk.js": "/trattoria-pizzeria/static/js/453.7da8f4cb.chunk.js",
+    "static/media/pasta-and-pizza.jpg": "/trattoria-pizzeria/static/media/pasta-and-pizza.31134cec029b48980329.jpg",
+    "static/media/banner-home.jpg": "/trattoria-pizzeria/static/media/banner-home.5b3b5eca457a4ebc7812.jpg",
+    "static/media/pizza-oil-pour.jpg": "/trattoria-pizzeria/static/media/pizza-oil-pour.a2be36a9c65bc2e0ef04.jpg",
+    "static/media/banner2.jpg": "/trattoria-pizzeria/static/media/banner2.f45ec53bc1a4fd681250.jpg",
+    "static/media/banner3.jpg": "/trattoria-pizzeria/static/media/banner3.a73ec8d11eb326cb4592.jpg",
+    "static/media/banner-4.jpg": "/trattoria-pizzeria/static/media/banner-4.fd29f5567db36a979490.jpg",
+    "static/media/neopolitan-pizza.jpg": "/trattoria-pizzeria/static/media/neopolitan-pizza.52b8abf325021322fe67.jpg",
+    "static/media/pizza-toss.jpg": "/trattoria-pizzeria/static/media/pizza-toss.8d30f303e6137d6bf651.jpg",
+    "static/media/tiramisu.jpg": "/trattoria-pizzeria/static/media/tiramisu.3ab157a1a914cd42f7b1.jpg",
+    "static/media/trattoria-sign.jpg": "/trattoria-pizzeria/static/media/trattoria-sign.27df20a45c9a735bc0e1.jpg",
+    "static/media/girl-pizza.jpg": "/trattoria-pizzeria/static/media/girl-pizza.d54ca895ab006d57b404.jpg",
+    "static/media/trattoria_logo.png": "/trattoria-pizzeria/static/media/trattoria_logo.6657066acf43b29d8167.png",
+    "index.html": "/trattoria-pizzeria/index.html",
+    "main.368f1a57.css.map": "/trattoria-pizzeria/static/css/main.368f1a57.css.map",
+    "main.2d9be077.js.map": "/trattoria-pizzeria/static/js/main.2d9be077.js.map",
+    "453.7da8f4cb.chunk.js.map": "/trattoria-pizzeria/static/js/453.7da8f4cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.368f1a57.css",
+    "static/js/main.2d9be077.js"
+  ]
+}
