@@ -23,9 +23,9 @@
   max-width: 35%;
   height: 50px;
   color: red;
-  border: 2.5px solid red;
+  border: 2px solid red;
   background-color: white;
-  font-size: 18px;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,8 +125,8 @@
 
   .nav-links {
     margin: 15px auto;
-    height: 30px;
-    border: 1.75px solid red;
+    height: 35px;
+    border: 1px solid red;
     font-size: calc(5px + 2vmin);
   }
 
